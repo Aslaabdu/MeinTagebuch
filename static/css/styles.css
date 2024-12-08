@@ -1,0 +1,209 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffd700 !important;
+}
+
+.navbar .btn-secondary {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.navbar .btn-secondary:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+}
+
+/* Hauptcontainer */
+.container {
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card-title {
+    color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.text-muted {
+    color: #888;
+}
+
+/* Login Styles */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.form-control {
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Upload Styles */
+.upload-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.upload-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-form input, .upload-form textarea {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.upload-form input[type="text"], .upload-form textarea {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.upload-form input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.upload-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .ms-auto {
+        display: none;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .login-container, .upload-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
